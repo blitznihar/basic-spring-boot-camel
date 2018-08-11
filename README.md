@@ -1,4 +1,4 @@
-<script src="https://gist.github.com/andyferra/2554919.js"></script>
+
 # basic-spring-boot-camel
 Basics of spring boot application for Apache Camel
 ## Basic POM file with description:
@@ -94,3 +94,13 @@ mvn spring-boot:run
 ```
 java -jar target/com.springboot.camel.basic-1.0.1.jar
 ```
+
+## Adding Bit more to this
+
+### Goal
+- [ ] Logging in Camel Spring boot
+- [ ] Debatching - EIP - Splitter
+- [ ] SQL operations
+- [ ] SEDA
+- [ ] Apache Active MQ operations
+- [ ] Apache kafka operations
