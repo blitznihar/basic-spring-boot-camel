@@ -100,7 +100,7 @@ java -jar target/com.springboot.camel.basic-1.0.1.jar
 java -jar -Dspring.profiles.active=stage target/com.springboot.camel.basic-1.0.1.jar
 ```
 
-## Unit Testing
+## Unit Testing and Mock Testing
 
 ### POM file for Unit and Mock Testing:
 ```
@@ -195,7 +195,7 @@ public class BasicRouteTest {
 	}
 }
 ```
-###Mock Testing:
+### Mock Testing:
 
 ```
 import org.apache.camel.EndpointInject;
