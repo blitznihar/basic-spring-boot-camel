@@ -95,10 +95,17 @@ mvn spring-boot:run
 java -jar target/com.springboot.camel.basic-1.0.1.jar
 ```
 
+> execution using jar with passing environment profile from yml
+```
+java -jar -Dspring.profiles.active=stage target/com.springboot.camel.basic-1.0.1.jar
+```
+
 ## Adding Bit more to this
 
 ### Goal
+- [ ] YAML based configuration
 - [ ] Logging in Camel Spring boot
+- [ ] Unit Testing
 - [ ] Debatching - EIP - Splitter
 - [ ] SQL operations
 - [ ] SEDA
