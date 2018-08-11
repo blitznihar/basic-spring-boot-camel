@@ -104,10 +104,12 @@ java -jar -Dspring.profiles.active=stage target/com.springboot.camel.basic-1.0.1
 
 ### Goal
 - [ ] YAML based configuration
-- [ ] Logging in Camel Spring boot
-- [ ] Unit Testing
+- [x] Unit Testing
+- [x] Mock Testing
 - [ ] Debatching - EIP - Splitter
-- [ ] SQL operations
-- [ ] SEDA
-- [ ] Apache Active MQ operations
-- [ ] Apache kafka operations
+- [ ] SQL operations CRUD
+- [ ] SEDA Read/Write
+- [ ] Apache Active MQ Read/Write
+- [ ] Apache kafka Read/Write
+- [ ] Logging in Camel Spring boot
+
