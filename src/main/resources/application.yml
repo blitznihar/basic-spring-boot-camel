@@ -1,0 +1,20 @@
+spring: 
+  profiles: 
+    active: dev
+---
+spring: 
+  profiles: dev
+#To keep the main thread blocked so that Camel stays up,
+camel.springboot.main-run-controller: true
+#route definitions
+routeIn: file:C:/playground/basic-spring-boot-camel/Test/Dev/In?noop=false
+routeOut: file:C:/playground/basic-spring-boot-camel/Test/Dev/Out
+
+---
+spring: 
+  profiles: stage
+#To keep the main thread blocked so that Camel stays up,
+camel.springboot.main-run-controller: true
+#route definitions
+routeIn: file:C:/playground/basic-spring-boot-camel/Test/Stage/In?noop=false
+routeOut: file:C:/playground/basic-spring-boot-camel/Test/Stage/Out
