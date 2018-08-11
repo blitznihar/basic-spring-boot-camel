@@ -3,6 +3,15 @@ spring:
     active: dev
 ---
 spring: 
+  profiles: mock
+#To keep the main thread blocked so that Camel stays up,
+camel.springboot.main-run-controller: true
+#route definitions
+routeIn: direct:input
+routeOut: mock:output
+
+---
+spring: 
   profiles: dev
 #To keep the main thread blocked so that Camel stays up,
 camel.springboot.main-run-controller: true

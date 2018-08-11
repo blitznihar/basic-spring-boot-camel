@@ -8,7 +8,9 @@ public class BasicRoute extends RouteBuilder {
 
 	@Override
 	public void configure() throws Exception {
-		from("{{routeIn}}").to("{{routeOut}}").log("${body}");
+		from("{{routeIn}}")
+		.log("${body}")
+		.to("{{routeOut}}");
 		
 	}
 
